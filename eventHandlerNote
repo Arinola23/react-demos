@@ -1,0 +1,130 @@
+React Synthetic Events, which are React’s built-in event handlers that wrap around native DOM events for consistency across browsers.
+
+Here’s a list of the most common built-in event handler props in React (like onClick, onCopy, onMouseMove, etc.) with their descriptions:
+
+🔹 Mouse Events
+
+onClick → Fires when an element is clicked.
+
+onDoubleClick → Fires when an element is double-clicked.
+
+onMouseEnter → Fires when the mouse pointer enters an element (doesn’t bubble).
+
+onMouseLeave → Fires when the mouse pointer leaves an element (doesn’t bubble).
+
+onMouseOver → Fires when the mouse pointer is moved onto an element (bubbles).
+
+onMouseOut → Fires when the mouse pointer is moved out of an element (bubbles).
+
+onMouseMove → Fires when the mouse pointer is moved inside an element.
+
+onMouseDown → Fires when a mouse button is pressed.
+
+onMouseUp → Fires when a mouse button is released.
+
+🔹 Keyboard Events
+
+onKeyDown → Fires when a key is pressed down.
+
+onKeyUp → Fires when a key is released.
+
+onKeyPress → Fires when a key is pressed (⚠️ deprecated in React, use onKeyDown).
+
+🔹 Clipboard Events
+
+onCopy → Fires when text/content is copied.
+
+onCut → Fires when text/content is cut.
+
+onPaste → Fires when text/content is pasted.
+
+🔹 Form Events
+
+onChange → Fires when the value of an input, textarea, or select changes.
+
+onInput → Fires when the user inputs text (more low-level than onChange).
+
+onSubmit → Fires when a form is submitted.
+
+onReset → Fires when a form is reset.
+
+onInvalid → Fires when a form element fails validation.
+
+🔹 Focus Events
+
+onFocus → Fires when an element (like input) gains focus.
+
+onBlur → Fires when an element loses focus.
+
+🔹 Drag & Drop Events
+
+onDrag → Fires while an element is being dragged.
+
+onDragStart → Fires when dragging starts.
+
+onDragEnd → Fires when dragging ends.
+
+onDragOver → Fires when a dragged item is moved over a valid drop target.
+
+onDragEnter → Fires when a dragged item enters a drop target.
+
+onDragLeave → Fires when a dragged item leaves a drop target.
+
+onDrop → Fires when a dragged item is dropped.
+
+🔹 Touch Events (for mobile devices)
+
+onTouchStart → Fires when a finger touches the screen.
+
+onTouchMove → Fires when a finger moves on the screen.
+
+onTouchEnd → Fires when a finger is lifted off the screen.
+
+onTouchCancel → Fires when a touch event is interrupted.
+
+🔹 Pointer Events (modern alternative to mouse/touch)
+
+onPointerDown → Fires when a pointer (mouse, stylus, finger) is pressed down.
+
+onPointerUp → Fires when pointer is released.
+
+onPointerMove → Fires when pointer moves.
+
+onPointerEnter / onPointerLeave → Similar to mouse enter/leave.
+
+onPointerOver / onPointerOut → Similar to mouse over/out.
+
+onGotPointerCapture / onLostPointerCapture → Handle pointer capturing.
+
+🔹 Media Events
+
+onPlay → Fires when media (audio/video) starts playing.
+
+onPause → Fires when media is paused.
+
+onEnded → Fires when playback ends.
+
+onVolumeChange → Fires when volume changes.
+
+onTimeUpdate → Fires when playback position updates.
+
+onLoadedMetadata → Fires when media metadata is loaded.
+
+🔹 Image Events
+
+onLoad → Fires when an image or script loads successfully.
+
+onError → Fires when image/script fails to load.
+
+🔹 Animation & Transition Events
+
+onAnimationStart → Fires when a CSS animation starts.
+
+onAnimationEnd → Fires when a CSS animation ends.
+
+onAnimationIteration → Fires each time an animation repeats.
+
+onTransitionEnd → Fires when a CSS transition ends.
+
+⚡ Summary:
+React has synthetic event props like onClick, onCopy, onMouseMove, onChange, onSubmit, onFocus, onDrag, onTouchStart, onPlay, onLoad, onAnimationEnd, etc.
