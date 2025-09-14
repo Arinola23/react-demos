@@ -19,7 +19,7 @@ const TimerRef = () => {
         const continueTimer = () => {
             intervalRef.current = setInterval(() => {
                 setTimer(prevTimer => prevTimer + 1)
-            }, 1000)
+            }, 2000)
         }
 
    
